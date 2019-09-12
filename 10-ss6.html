@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number = Number(prompt("Nhập tên số nguyên tố"));
+  if (checkPrime(number) == true) {
+      alert(number + " là số nguyên tố");
+  } else {
+      alert(number + " không phải số nguyên tố");
+  }
+  function checkPrime(number) {
+      if (number < 2) {
+          return false;
+      } else{
+          for (let i = 2; i < number; i++) {
+              if (number % i == 0) {
+                  return false;
+              }
+          }
+          return true;
+      }
+  }
+</script>
+</body>
+</html>

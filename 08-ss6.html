@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Temperrature Converter</h3><br>
+<p>Type a value in the Faherenheit fied to convert the value to Celicus:</p>
+<h3>Faherenheit</h3><input type="text" id="doF">
+<button type="button" onclick="demo()">Kết quả</button>
+<div id="ketqua"></div>
+<script>
+    function demo() {
+        let doF = document.getElementById("doF").value;
+        doC = (doF - 32)/1.8;
+        document.getElementById("ketqua").innerHTML = "CELSIUS : " + doC;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    feet: <input type="text" id="giatri1">
+    <input type="button" value="ketqua1" onclick="demo1()">
+    meters: <input type="text" id="giatri2">
+
+    <hr>
+    mesters: <input type="text" id="giatri3">
+    <input type="button" value="ketqua2" onclick="demo2()">
+    feet <input type="text" id="giatri4">
+
+</form>
+<script>
+    function demo1() {
+        let number1 = document.getElementById("giatri1").value;
+        let number2 = document.getElementById("giatri2");
+        let meter = 0.305 * number1 ;
+        number2.value = meter;
+    }
+    function demo2() {
+        let number3 = document.getElementById("giatri3").value;
+        let number4 = document.getElementById("giatri4");
+        let foot = 3.279 * number3;
+        number4.value = foot;
+    }
+</script>
+</body>
+</html>
